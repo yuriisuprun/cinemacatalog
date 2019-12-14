@@ -2,31 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25407452-1b66-4c1b-bec9-6e16dc1ac23c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/suprun/cinemacatalog/DemoApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/suprun/cinemacatalog/repository/CinemaDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/cinema.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/suprun/cinemacatalog/CinemaCatalogApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/suprun/cinemacatalog/config/Config.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/suprun/cinemacatalog/controller/CinemaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suprun/cinemacatalog/controller/CinemaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/suprun/cinemacatalog/model/Cinema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suprun/cinemacatalog/model/Cinema.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/suprun/cinemacatalog/repository/CinemaDAOImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/suprun/cinemacatalog/repository/CinemaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suprun/cinemacatalog/repository/CinemaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/suprun/cinemacatalog/service/CinemaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suprun/cinemacatalog/service/CinemaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/suprun/cinemacatalog/service/CinemaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suprun/cinemacatalog/service/CinemaServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/suprun/cinemacatalog/CinemaCatalogApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/suprun/cinemacatalog/config/Config.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/suprun/cinemacatalog/controller/CinemaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suprun/cinemacatalog/controller/CinemaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/suprun/cinemacatalog/model/Cinema.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suprun/cinemacatalog/model/Cinema.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/suprun/cinemacatalog/repository/CinemaDAOImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/suprun/cinemacatalog/repository/CinemaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suprun/cinemacatalog/repository/CinemaRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/suprun/cinemacatalog/service/CinemaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suprun/cinemacatalog/service/CinemaService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/suprun/cinemacatalog/service/CinemaServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/suprun/cinemacatalog/service/CinemaServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +25,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -68,6 +53,9 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Yurii\IdeaProjects\cinemacatalog\src\main\resources\public" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Yurii\IdeaProjects\cinemacatalog\src\main\resources" />
       <recent name="C:\Users\Yurii\IdeaProjects\cinemacatalog\src\main\java\com\suprun\cinemacatalog" />
@@ -130,9 +118,25 @@
       <option name="presentableId" value="Default" />
       <updated>1574097397251</updated>
     </task>
+    <task id="LOCAL-00001" summary="app structure was changed">
+      <created>1576355527915</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576355527915</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="app structure was changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="app structure was changed" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="454" y="27" key="CommitChangelistDialog2" timestamp="1576355521209">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="454" y="27" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1576355521209" />
     <state width="1557" height="177" key="GridCell.Tab.0.bottom" timestamp="1576355033331">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -149,6 +153,14 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1557" height="177" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1576355033331" />
+    <state x="392" y="165" key="Vcs.Push.Dialog.v2" timestamp="1576355545080">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="165" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1576355545080" />
+    <state x="456" y="195" key="run.anything.popup" timestamp="1576355708030">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="456" y="195" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1576355708030" />
   </component>
   <component name="p4-ProjectCache">
     <option name="serverState">

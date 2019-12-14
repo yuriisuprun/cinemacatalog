@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Cinema catalog</title>
+</head>
+
+<body>
+<h1>Cinema catalog</h1>
+
+<div ng-app="cinemaDemo" ng-controller="cinemaCtrl">
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+            </tr>
+        </thead>
+        <tr ng-repeat="cinema in cinemas">
+            <td>{{ cinema.id }}</td>
+            <td>{{ cinema.cinemaTitle }}</td>
+        </tr>
+    </table>
+
+</div>
+
+<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
