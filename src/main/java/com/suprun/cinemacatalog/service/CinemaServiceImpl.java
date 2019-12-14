@@ -1,68 +1,53 @@
 package com.suprun.cinemacatalog.service;
 
 import com.suprun.cinemacatalog.model.Cinema;
+import com.suprun.cinemacatalog.repository.CinemaDAO;
 import com.suprun.cinemacatalog.repository.CinemaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-
-import java.util.Date;
-import java.util.Optional;
+import java.util.List;
 
 @Service
-public class CinemaServiceImpl  implements CinemaService{
-
-    private final CinemaRepository cinemaRepository;
+public class CinemaServiceImpl implements CinemaService {
 
     @Autowired
-    public CinemaServiceImpl(CinemaRepository cinemaRepository) {
-        this.cinemaRepository = cinemaRepository;
-    }
+    private CinemaDAO cinemaDAO;
+
+    @Autowired
+    private CinemaRepository cinemaRepository;
 
     @Override
-    public Cinema save(Cinema cinema) {
-        return cinemaRepository.save(cinema);
-    }
-
-    @Override
-    public Optional<Cinema> findOne(String id) {
-        return cinemaRepository.findById(id);
-    }
-
-    @Override
-    public Iterable<Cinema> findAll() {
+    public Iterable<Cinema> getAllCinema() {
         return cinemaRepository.findAll();
     }
 
     @Override
-    public Page<Cinema> findByTitle(String title, Pageable pageable) {
-        return cinemaRepository.findByCinemaTitle(title, pageable);
+    public Cinema add(String id, String title) {
+        Cinema cinema = new Cinema(id, title);
+        cinemaRepository.save(cinema);
+        return cinema;
     }
 
     @Override
-    public Page<Cinema> findByTitleUsingCustomQuery(String title, Pageable pageable) {
-        return cinemaRepository.findByCinemaTitleUsingCustomQuery(title, pageable);
+    public List<Cinema> findByCinemaTitleUsingCustomQuery(String title) {
+        List<Cinema> cinemas = cinemaRepository.findByCinemaTitleUsingCustomQuery(title);
+        System.out.println(cinemas);
+        return cinemas;
     }
 
     @Override
-    public Page<Cinema> findByFilteredReleaseYearQuery(Date releaseYear, Pageable pageable) {
-        return cinemaRepository.findByFilteredReleaseYearQuery(releaseYear, pageable);
+    public List<Cinema> findAllCinemaByCinemaTitle(String title) {
+        return cinemaDAO.findAllCinemaByCinemaTitle(title);
     }
 
     @Override
-    public Page<Cinema> findByTitleAndFilteredReleaseYearQuery(String title, Date releaseYear, Pageable pageable) {
-        return cinemaRepository.findByCinemaTitleAndFilteredReleaseYearQuery(title, releaseYear, pageable);
+    public List<Cinema> findAllCinema() {
+        return cinemaDAO.findAllCinema();
     }
 
-    @Override
-    public long count() {
-        return cinemaRepository.count();
+    public List<Cinema> findCinemaBySpecificQuery(String specificQuery) {
+        return cinemaDAO.findCinemaBySpecificQuery(specificQuery);
     }
 
-    @Override
-    public void delete(Cinema cinema) {
-        cinemaRepository.delete(cinema);
-    }
 }

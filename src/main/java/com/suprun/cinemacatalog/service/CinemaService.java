@@ -2,29 +2,18 @@ package com.suprun.cinemacatalog.service;
 
 import com.suprun.cinemacatalog.model.Cinema;
 
-import java.util.Date;
-import java.util.Optional;
-
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
+import java.util.List;
 
 public interface CinemaService {
 
-    Cinema save(Cinema cinema);
+    Iterable<Cinema> getAllCinema();
 
-    Optional<Cinema> findOne(String id);
+    Cinema add(String id, String name);
 
-    Iterable<Cinema> findAll();
+    List<Cinema> findByCinemaTitleUsingCustomQuery(String title);
 
-    Page<Cinema> findByTitle(String name, Pageable pageable);
+    List<Cinema> findAllCinemaByCinemaTitle(String title);
 
-    Page<Cinema> findByTitleUsingCustomQuery(String title, Pageable pageable);
+    List<Cinema> findAllCinema();
 
-    Page<Cinema> findByFilteredReleaseYearQuery(Date releaseYear, Pageable pageable);
-
-    Page<Cinema> findByTitleAndFilteredReleaseYearQuery(String title, Date releaseYear, Pageable pageable);
-
-    long count();
-
-    void delete(Cinema cinema);
 }
